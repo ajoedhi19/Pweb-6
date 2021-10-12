@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Persetujuan Perkuliahan Offline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <body>
+        <header>
+            <img src="logo.png" alt="logo" class="mx-5">
+        </header>
+        <div class="formContainer" style="margin-top: 80px; margin-bottom: 80px">
+            <h1 style="margin-bottom: 40px;">Pendataan Vaksinasi Mahasiswa</h1>
+            <div class="container">
+                <form id="formMahasiswa" autocomplete="off">
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" name="nama" placeholder="Nama Lengkap Mahasiswa" class="form-control" minlength="3" maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <label>NRP</label>
+                        <input type="text" name="nrp" placeholder="NRP Mahasiswa" class="form-control" minlength="10" maxlength="16">
+                    </div>
+                    <div class="form-group">
+                        <label>Domisili</label>
+                        <input type="text" name="domisili" placeholder="Alamat Domisili Asal" class="form-control" minlength="1">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Email Aktif Mahasiswa" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Jurusan</label>
+                        <select name="jurusan" class="form-control">
+                            <option value="0">Pilih Jurusan Mahasiswa</option>
+                            <option value="1">Fisika</option>
+                            <option value="2">Matematika</option>
+                            <option value="3">Statistika</option>
+                            <option value="4">Kimia</option>
+                            <option value="5">Biologi</option>
+                            <option value="6">Aktuaria</option>
+                            <option value="7">Teknik Perkapalan</option>
+                            <option value="8">Teknik Sistem Perkapalan</option>
+                            <option value="9">Teknik Kelautan</option>
+                            <option value="10">Teknik Transportasi Laut</option>
+                            <option value="11">Teknik Mesin</option>
+                            <option value="12">Teknik Kimia</option>
+                            <option value="13">Teknik Fisika</option>
+                            <option value="14">Teknik Sistem dan Industri</option>
+                            <option value="15">Teknik Material</option>
+                            <option value="16">Teknik Elektro</option>
+                            <option value="17">Teknik Biomedik</option>
+                            <option value="18">Teknik Komputer</option>
+                            <option value="19">Teknik Informatika</option>
+                            <option value="20">Sistem Informasi</option>
+                            <option value="21">Teknologi Informasi</option>
+                            <option value="22">Teknik Sipil</option>
+                            <option value="23">Arsitektur</option>
+                            <option value="24">Teknik Lingkungan</option>
+                            <option value="25">Perencanaan Wilayah dan Kota</option>
+                            <option value="26">Teknik Geomatika</option>
+                            <option value="27">Teknik Geofisika</option>
+                            <option value="28">Desain Produk Industri</option>
+                            <option value="29">Desain Interior</option>
+                            <option value="30">Desain Komunikasi Visual</option>/
+                            <option value="31">Manajemen Bisnis</option>
+                            <option value="32">Studi Pembangunan</option>
+                            <option value="33">Manajemen Teknologi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Vaksin</label>
+                        <select name="vaksin" class="form-control">
+                            <option selected>- pilih status -</option>
+                            <option value="1">Belum Vaksin</option>
+                            <option value="2">Sudah Vaksin - Dosis 1</option>
+                            <option value="3">Sudah Vaksin - Dosis 2</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()" style="margin-top: 20px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <h6>Copyright © 2021 Institut Teknologi Sepuluh Nopember</h6>
+        </footer>
+    </body>
+    </html>
+</body>
+</html>
